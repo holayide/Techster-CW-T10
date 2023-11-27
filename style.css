@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    margin: 40px auto 0;
+    box-shadow: 5px 10px 18px #888888;
+    height: 80vh;
+}
+.right {
+    width: 50%;
+    text-align: center;
+}
+.rignt-inner-container {
+    width: 70%;
+    /* height: 100%; */
+    margin: auto;
+}
+.right h3 {
+    padding: 70px 0 10px;
+    font-size: 1.4rem;
+    color: #888888;
+}
+.right h4 {
+    font-size: .9rem;
+    color: rgb(217, 221, 233);
+}
+.rignt-inner-container > hr {
+    width: 30px;
+    margin: 30px auto;
+    border: 2px solid #29bf96;
+}
+input, button {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+input {
+    border: 1px solid rgb(217, 221, 233);;
+}
+form div:last-of-type {
+    margin: 20px 0;
+}
+.right p {
+    padding: 20px 0 35px;
+}
+form button {
+    background-color: #29bf96;
+    color: white;
+    border: none;
+}
+.right .rignt-inner-container > p, 
+span {
+    color: #29bf96;
+}
+.foot p {
+    color: #868484;
+}
+.foot hr {
+    margin: 30px auto;
+    border: 1px solid rgb(193, 195, 202);
+}
+
+/* image */
+.left {
+    width: 50%;
+    height: 100%;
+}
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+    .left img {
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 1024px) {
+     .container{
+        width: 70%;
+        height: 90vh;
+        gap: 8px;
+    }
+    .right h3 {
+        padding: 50px 0 10px;
+    }
+    .foot hr {
+        margin: 10px auto;
+    }
+    .rignt-inner-container {
+        width: 85%;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 100%;
+        /* height: 100vh; */
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+    .rignt-inner-container {
+        width: 90%;
+    }
+    .left {
+        display: none;
+    }
+    .right h3 {
+        padding: 70px 0 20px;
+        font-size: 1.7rem;
+    }
+    .rignt-inner-container > hr {
+        width: 50px;
+        margin: 40px auto;
+    }
+    form div:last-of-type {
+        margin: 35px 0;
+    }
+    .foot hr {
+        margin: 60px auto;
+        border: 1px solid rgb(193, 195, 202);
+    }
+}
